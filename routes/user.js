@@ -8,7 +8,7 @@ var userScheme = new user({
 });
 
 var dbURI = "mongodb://localhost:27017/mkm";
-mongoose.connect('mongodb://localhost:27017/mkm', { useMongoClient: true }, function (err) {
+mongoose.connect(dbURI, { useMongoClient: true }, function (err) {
 	if (err) throw err;
 	console.log('connected');
 }
